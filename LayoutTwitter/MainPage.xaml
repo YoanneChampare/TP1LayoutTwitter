@@ -9,16 +9,34 @@
     <StackLayout>
         <StackLayout BackgroundColor="#58B0F0" VerticalOptions="Start" Padding="25" Orientation="Horizontal">
             <!-- Place new controls here -->
-            <Label Text="Nouveau" 
-           HorizontalOptions="StartAndExpand"   TextColor="White"/>
+            <ImageButton Source="pencil.png" HorizontalOptions="StartAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
             <Label Text="Accueil" 
-           HorizontalOptions="CenterAndExpand" TextColor="White"/>
-            <Label Text="Rechercher" 
-           HorizontalOptions="EndAndExpand" TextColor="White" />
+           HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+            <ImageButton Source="search.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
         </StackLayout>
 
-    <StackLayout BackgroundColor="White">
-                <Grid BackgroundColor="White" Margin="10">
+        <StackLayout Orientation="Horizontal" >
+            <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Gray"></Label>
+            
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical">
+            <Entry Placeholder="Identifiant Twitter" Keyboard="Email" HorizontalOptions="FillAndExpand"></Entry>
+            <Entry Placeholder="Mot de passe" IsPassword="True" HorizontalOptions="FillAndExpand"></Entry>
+            
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Switch></Switch>
+            <Label Text="Mémoriser mon mot de passe" VerticalOptions="CenterAndExpand"></Label>
+           
+        </StackLayout>
+        
+        <Button Text="Se connecter" HorizontalOptions="FillAndExpand"></Button>
+
+
+        <StackLayout BackgroundColor="White">
+                <Grid BackgroundColor="White" Margin="5,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20"></RowDefinition>
                         <RowDefinition Height="70"></RowDefinition>
@@ -26,21 +44,21 @@
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="30"></ColumnDefinition>
-                        <ColumnDefinition Width="290"></ColumnDefinition>
+                        <ColumnDefinition Width="80"></ColumnDefinition>
+                        <ColumnDefinition Width="230"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <BoxView BackgroundColor="Black" Grid.RowSpan="2"></BoxView>
+                    <ImageButton Source="avatar.png" Grid.RowSpan="2" Aspect="AspectFit"></ImageButton>
                     <Label Text="Yoanne @yoannechampare" Grid.Row="0" Grid.Column="1" TextColor="Black"></Label>
-                    <Label Text="Le lorem ipsum estune suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte. " Grid.Row="1" Grid.Column="1" TextColor="Black"></Label>
+                    <Label Text="Le lorem ipsum est une suite de mots utilisée pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte. " Grid.Row="1" Grid.Column="1" TextColor="Black"></Label>
                     <Label Text="50 s." Grid.Row="0" Grid.Column="2" TextColor="Black"></Label>
             </Grid>
-            <StackLayout Orientation="Horizontal" Margin="25">
-                    <Label Text="Répondre" HorizontalOptions="StartAndExpand" TextColor="Black"></Label>
-                <Label Text="Retweet" HorizontalOptions="CenterAndExpand" TextColor="Black"></Label>
-                <Label Text="Favoris" HorizontalOptions="EndAndExpand" TextColor="Black"></Label>
-                </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <ImageButton Source="reply.png" HorizontalOptions="StartAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                <ImageButton Source="favorite.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+            </StackLayout>
                 
             </StackLayout> 
 
@@ -48,15 +66,15 @@
             
         </ScrollView>
 
-            <StackLayout VerticalOptions="End" Orientation="Horizontal">
-            <Button
-            Text="Fil"></Button>
-            <Button
-            Text="Notifications"></Button>
-            <Button
-            Text="Messages"></Button>
-            <Button
-            Text="Moi" HeightRequest="75"></Button>
+            <StackLayout VerticalOptions="End" Orientation="Horizontal" >
+            <Label
+            Text="Fil" HorizontalOptions="FillAndExpand"></Label>
+            <Label
+            Text="Notifications" HorizontalOptions="FillAndExpand"></Label>
+            <Label
+            Text="Messages" HorizontalOptions="FillAndExpand"></Label>
+            <Label
+            Text="Moi" HorizontalOptions="FillAndExpand" HeightRequest="40"></Label>
         </StackLayout>
 
     </StackLayout>

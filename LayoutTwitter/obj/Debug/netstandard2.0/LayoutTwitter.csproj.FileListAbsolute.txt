@@ -1,0 +1,14 @@
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\bin\Debug\netstandard2.0\LayoutTwitter.deps.json
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\bin\Debug\netstandard2.0\LayoutTwitter.dll
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\bin\Debug\netstandard2.0\ref\LayoutTwitter.dll
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\bin\Debug\netstandard2.0\LayoutTwitter.pdb
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.csprojAssemblyReference.cache
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.AssemblyInfoInputs.cache
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.AssemblyInfo.cs
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.csproj.CoreCompileInputs.cache
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.dll
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\ref\LayoutTwitter.dll
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.pdb
