@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xueW0EBAlB09UlQ/7FVnYfX9MB9t51mBGrbgbG0+Ax1aOhwsqok1egifnoezZpLXEJ2JzhHztI8pAmXv9b/5fQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yoyo\\source\\repos\\LayoutTwitter\\LayoutTwitter.iOS\\LayoutTwitter.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yoyo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}

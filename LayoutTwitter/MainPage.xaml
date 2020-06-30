@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LayoutTwitter.MainPage">
+
+    <StackLayout>
+        <StackLayout BackgroundColor="#58B0F0" VerticalOptions="Start" Padding="25" Orientation="Horizontal">
+            <!-- Place new controls here -->
+            <Label Text="Nouveau" 
+           HorizontalOptions="StartAndExpand"   TextColor="White"/>
+            <Label Text="Accueil" 
+           HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Label Text="Rechercher" 
+           HorizontalOptions="EndAndExpand" TextColor="White" />
+        </StackLayout>
+
+    <StackLayout BackgroundColor="White">
+                <Grid BackgroundColor="White" Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"></RowDefinition>
+                        <RowDefinition Height="70"></RowDefinition>
+                        
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"></ColumnDefinition>
+                        <ColumnDefinition Width="290"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <BoxView BackgroundColor="Black" Grid.RowSpan="2"></BoxView>
+                    <Label Text="Yoanne @yoannechampare" Grid.Row="0" Grid.Column="1" TextColor="Black"></Label>
+                    <Label Text="Le lorem ipsum estune suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte. " Grid.Row="1" Grid.Column="1" TextColor="Black"></Label>
+                    <Label Text="50 s." Grid.Row="0" Grid.Column="2" TextColor="Black"></Label>
+            </Grid>
+            <StackLayout Orientation="Horizontal" Margin="25">
+                    <Label Text="Répondre" HorizontalOptions="StartAndExpand" TextColor="Black"></Label>
+                <Label Text="Retweet" HorizontalOptions="CenterAndExpand" TextColor="Black"></Label>
+                <Label Text="Favoris" HorizontalOptions="EndAndExpand" TextColor="Black"></Label>
+                </StackLayout>
+                
+            </StackLayout> 
+
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            
+        </ScrollView>
+
+            <StackLayout VerticalOptions="End" Orientation="Horizontal">
+            <Button
+            Text="Fil"></Button>
+            <Button
+            Text="Notifications"></Button>
+            <Button
+            Text="Messages"></Button>
+            <Button
+            Text="Moi" HeightRequest="75"></Button>
+        </StackLayout>
+
+    </StackLayout>
+    
+
+    
+
+
+
+
+</ContentPage>
