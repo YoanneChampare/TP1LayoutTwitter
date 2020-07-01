@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LayoutTwitter.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -18,10 +19,25 @@ namespace LayoutTwitter
             InitializeComponent();
         }
 
+        TwitterService ts = new TwitterService();
 
         private void connexionClick(object sender, EventArgs e)
         {
-            bool acces = true;
+            bool connexion = ts.authenticate(this.identifiant.Text, this.password.Text);
+
+            if (!connexion)
+            {
+                this.afficherErreur("Identifiant ou mot de passe incorrect");
+
+            }
+            else
+            {
+                this.tweet.IsVisible = true;
+
+                this.formulaire.IsVisible = false;
+            }
+
+           /* bool acces = true;
             this.cacherErreur();
             if (this.identifiant.Text==null || string.IsNullOrEmpty(this.identifiant.ToString()) || this.identifiant.Text.Length < 3)
             {
@@ -39,7 +55,8 @@ namespace LayoutTwitter
             {
                 this.tweet.IsVisible = true;
                 this.formulaire.IsVisible = false;
-            }
+
+            }*/
 
         }
 
