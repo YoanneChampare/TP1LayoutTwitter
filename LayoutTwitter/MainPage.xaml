@@ -17,30 +17,31 @@
 
         <StackLayout Orientation="Horizontal" >
             <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Gray"></Label>
-            
-        </StackLayout>
 
-        <StackLayout Orientation="Vertical">
-            <Entry Placeholder="Identifiant Twitter" Keyboard="Email" HorizontalOptions="FillAndExpand"></Entry>
-            <Entry Placeholder="Mot de passe" IsPassword="True" HorizontalOptions="FillAndExpand"></Entry>
-            
+        </StackLayout>
+        <StackLayout x:Name="formulaire" IsVisible="true">
+            <StackLayout Orientation="Vertical">
+            <Entry x:Name="identifiant" Keyboard="Email" HorizontalOptions="FillAndExpand"></Entry>
+            <Entry x:Name="password" IsPassword="True" HorizontalOptions="FillAndExpand"></Entry>
+
         </StackLayout>
 
         <StackLayout Orientation="Horizontal">
             <Switch></Switch>
             <Label Text="Mémoriser mon mot de passe" VerticalOptions="CenterAndExpand"></Label>
-           
+
         </StackLayout>
-        
-        <Button Text="Se connecter" HorizontalOptions="FillAndExpand"></Button>
 
-
-        <StackLayout BackgroundColor="White">
+        <Label x:Name="erreur" IsVisible="false" HorizontalOptions="FillAndExpand" TextColor="Red"></Label>
+        <Button Clicked="connexionClick" Text="Se connecter" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+        <StackLayout x:Name="tweet" IsVisible="false" VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="White">
                 <Grid BackgroundColor="White" Margin="5,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20"></RowDefinition>
                         <RowDefinition Height="70"></RowDefinition>
-                        
+
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
@@ -53,35 +54,33 @@
                     <Label Text="Yoanne @yoannechampare" Grid.Row="0" Grid.Column="1" TextColor="Black"></Label>
                     <Label Text="Le lorem ipsum est une suite de mots utilisée pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte. " Grid.Row="1" Grid.Column="1" TextColor="Black"></Label>
                     <Label Text="50 s." Grid.Row="0" Grid.Column="2" TextColor="Black"></Label>
-            </Grid>
-            <StackLayout Orientation="Horizontal" Margin="5">
-                <ImageButton Source="reply.png" HorizontalOptions="StartAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
-                <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
-                <ImageButton Source="favorite.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                </Grid>
+                <StackLayout Orientation="Horizontal" Margin="5">
+                    <ImageButton Source="reply.png" HorizontalOptions="StartAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                    <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                    <ImageButton Source="favorite.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                </StackLayout>
+
             </StackLayout>
-                
-            </StackLayout> 
 
-        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-            
-        </ScrollView>
+            <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
 
-            <StackLayout VerticalOptions="End" Orientation="Horizontal" >
-            <Label
+            </ScrollView>
+
+            <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" >
+                <Label
             Text="Fil" HorizontalOptions="FillAndExpand"></Label>
-            <Label
+                <Label
             Text="Notifications" HorizontalOptions="FillAndExpand"></Label>
-            <Label
+                <Label
             Text="Messages" HorizontalOptions="FillAndExpand"></Label>
-            <Label
+                <Label
             Text="Moi" HorizontalOptions="FillAndExpand" HeightRequest="40"></Label>
+            </StackLayout>
+
         </StackLayout>
 
     </StackLayout>
-    
-
-    
-
 
 
 
