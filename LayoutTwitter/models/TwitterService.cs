@@ -23,20 +23,20 @@ namespace LayoutTwitter.models
 
 
             },
-            new Tweet
+           /* new Tweet
             {
-                Id=1,
+                Id=2,
                 DateCreation="18/06/2020",
                 Texte="Coucou les amis ! Bonnes vancances",
                 Nom="Yoanne",
-                Identifiant="password",
+                Identifiant="password",                                                                                                                                                                                                                                                             t="password",
                 Pseudo="Yoyo"
 
 
-            },
+            },*/
             new Tweet
             {
-                Id=1,
+                Id=3,
                 DateCreation="16/05/2020",
                 Texte="Découvrez la nouvelle spécialité de chez Papo",
                 Nom="Paul",

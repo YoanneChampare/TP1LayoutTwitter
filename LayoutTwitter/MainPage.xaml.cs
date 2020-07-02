@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace LayoutTwitter
@@ -17,46 +18,76 @@ namespace LayoutTwitter
         public MainPage()
         {
             InitializeComponent();
+            verificationNetwork();
+          
         }
 
-        TwitterService ts = new TwitterService();
+        private bool verificationNetwork()
+        {
+            cacherEtatNetWork();
+           var current = Connectivity.NetworkAccess;
 
+            if (current == NetworkAccess.Internet)
+            {
+                this.afficherEtatNetwork("Connexion internet OK");
+                return true;
+            }
+            else
+            {
+                this.afficherEtatNetwork("Pas de connexion internet");
+                return false;
+            }
+        }
+
+       
+
+        TwitterService ts = new TwitterService();
+        
         private void connexionClick(object sender, EventArgs e)
         {
+            verificationNetwork();
             bool connexion = ts.authenticate(this.identifiant.Text, this.password.Text);
-
-            if (!connexion)
+            if (verificationNetwork())
             {
-                this.afficherErreur("Identifiant ou mot de passe incorrect");
+                if (!connexion)
+                {
+                    this.afficherErreur("Identifiant ou mot de passe incorrect");
+
+                }
+                else
+                {
+                    this.tweet.IsVisible = true;
+
+                    this.formulaire.IsVisible = false;
+                }
 
             }
             else
             {
-                this.tweet.IsVisible = true;
-
-                this.formulaire.IsVisible = false;
-            }
-
-           /* bool acces = true;
-            this.cacherErreur();
-            if (this.identifiant.Text==null || string.IsNullOrEmpty(this.identifiant.ToString()) || this.identifiant.Text.Length < 3)
-            {
-                acces = false;
-                this.afficherErreur("Identifiant trop court !");
-            }
-
-            if (this.password.Text== null || string.IsNullOrEmpty(this.password.ToString()) || this.password.Text.Length < 6)
-            {
-                acces = false;
-                this.afficherErreur("Mot de passe trop court !");
-            }
-
-            if (acces)
-            {
-                this.tweet.IsVisible = true;
                 this.formulaire.IsVisible = false;
 
-            }*/
+            }
+
+            /* bool acces = true;
+             this.cacherErreur();
+             if (this.identifiant.Text==null || string.IsNullOrEmpty(this.identifiant.ToString()) || this.identifiant.Text.Length < 3)
+             {
+                 acces = false;
+                 this.afficherErreur("Identifiant trop court !");
+             }
+
+             if (this.password.Text== null || string.IsNullOrEmpty(this.password.ToString()) || this.password.Text.Length < 6)
+             {
+                 acces = false;
+                 this.afficherErreur("Mot de passe trop court !");
+             }
+
+             if (acces)
+             {
+                 this.tweet.IsVisible = true;
+                 this.formulaire.IsVisible = false;
+
+             }*/
 
         }
 
@@ -65,10 +96,21 @@ namespace LayoutTwitter
             this.erreur.IsVisible = true;
             this.erreur.Text = message;
         }
-        
+
+        private void afficherEtatNetwork(string message)
+        {
+            this.network.IsVisible = true;
+            this.network.Text = message;
+        }
+
         private void cacherErreur()
         {
             this.erreur.IsVisible = false;
+        }
+
+        private void cacherEtatNetWork()
+        {
+            this.network.IsVisible = false;
         }
     }
 }

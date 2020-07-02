@@ -15,9 +15,9 @@
             <ImageButton Source="search.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" >
+        <StackLayout Orientation="Vertical" >
             <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Gray"></Label>
-
+            <Label x:Name="network" TextColor="Orange" HorizontalOptions="CenterAndExpand" IsVisible="false"></Label>
         </StackLayout>
         <StackLayout x:Name="formulaire" IsVisible="true">
             <StackLayout Orientation="Vertical">
