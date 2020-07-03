@@ -32,54 +32,10 @@
 
         </StackLayout>
 
-        <Label x:Name="erreur" IsVisible="false" HorizontalOptions="FillAndExpand" TextColor="Red"></Label>
+        <Label x:Name="erreur" HorizontalOptions="FillAndExpand" TextColor="Red"></Label>
         <Button Clicked="connexionClick" Text="Se connecter" HorizontalOptions="FillAndExpand"></Button>
         </StackLayout>
-        <StackLayout x:Name="tweet" IsVisible="false" VerticalOptions="FillAndExpand">
-            <StackLayout BackgroundColor="White">
-                <Grid BackgroundColor="White" Margin="5,10">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="20"></RowDefinition>
-                        <RowDefinition Height="70"></RowDefinition>
-
-                    </Grid.RowDefinitions>
-
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="80"></ColumnDefinition>
-                        <ColumnDefinition Width="230"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
-                    <ImageButton Source="avatar.png" Grid.RowSpan="2" Aspect="AspectFit"></ImageButton>
-                    <Label Text="Yoanne @yoannechampare" Grid.Row="0" Grid.Column="1" TextColor="Black"></Label>
-                    <Label Text="Le lorem ipsum est une suite de mots utilisée pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte. " Grid.Row="1" Grid.Column="1" TextColor="Black"></Label>
-                    <Label Text="50 s." Grid.Row="0" Grid.Column="2" TextColor="Black"></Label>
-                </Grid>
-                <StackLayout Orientation="Horizontal" Margin="5">
-                    <ImageButton Source="reply.png" HorizontalOptions="StartAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
-                    <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
-                    <ImageButton Source="favorite.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
-                </StackLayout>
-
-            </StackLayout>
-
-            <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-
-            </ScrollView>
-
-            <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" >
-                <Label
-            Text="Fil" HorizontalOptions="FillAndExpand"></Label>
-                <Label
-            Text="Notifications" HorizontalOptions="FillAndExpand"></Label>
-                <Label
-            Text="Messages" HorizontalOptions="FillAndExpand"></Label>
-                <Label
-            Text="Moi" HorizontalOptions="FillAndExpand" HeightRequest="40"></Label>
-            </StackLayout>
-
-        </StackLayout>
-
+        
     </StackLayout>
 
 

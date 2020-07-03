@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LayoutTwitter.ListeTweet">
+    <ContentPage.Content>
+        <ListView x:Name="liste">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="avatar.png" Aspect="AspectFit"></Image>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Pseudo}" HorizontalOptions="StartAndExpand"></Label>
+                                    <Label Text="{Binding Texte}" HorizontalOptions="Center"></Label>
+
+                                </StackLayout>
+
+                                <Label Text="{Binding Identifiant}" HorizontalOptions="CenterAndExpand"></Label>
+
+                                <Label Text="{Binding DateCreation}" HorizontalOptions="EndAndExpand"></Label>
+                               
+                            </StackLayout>
+
+                 <!--           <StackLayout Orientation="Horizontal">
+
+                                <ImageButton Source="reply.png" HorizontalOptions="StartAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                                <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                                <ImageButton Source="favorite.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+
+                            </StackLayout>-->
+
+
+
+                        </StackLayout>
+
+                       
+
+
+
+
+
+                    </ViewCell>
+                   
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <!-- <StackLayout x:Name="tweet" VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="White">
+                <Grid BackgroundColor="White" Margin="5,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"></RowDefinition>
+                        <RowDefinition Height="70"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"></ColumnDefinition>
+                        <ColumnDefinition Width="230"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Source="avatar.png" Grid.RowSpan="2" Aspect="AspectFit"></ImageButton>
+                    <Label Text="Yoanne @yoannechampare" Grid.Row="0" Grid.Column="1" TextColor="Black"></Label>
+                    <Label Text="Le lorem ipsum est une suite de mots utilisée pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte. " Grid.Row="1" Grid.Column="1" TextColor="Black"></Label>
+                    <Label Text="50 s." Grid.Row="0" Grid.Column="2" TextColor="Black"></Label>
+                </Grid>
+                <StackLayout Orientation="Horizontal" Margin="5">
+                    <ImageButton Source="reply.png" HorizontalOptions="StartAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                    <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                    <ImageButton Source="favorite.png" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30" Aspect="AspectFit"></ImageButton>
+                </StackLayout>
+
+            </StackLayout>
+
+            <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+
+            </ScrollView>
+
+            <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" >
+                <Label
+            Text="Fil" HorizontalOptions="FillAndExpand"></Label>
+                <Label
+            Text="Notifications" HorizontalOptions="FillAndExpand"></Label>
+                <Label
+            Text="Messages" HorizontalOptions="FillAndExpand"></Label>
+                <Label
+            Text="Moi" HorizontalOptions="FillAndExpand" HeightRequest="40"></Label>
+            </StackLayout>
+
+        </StackLayout>
+-->
+    </ContentPage.Content>
+</ContentPage>

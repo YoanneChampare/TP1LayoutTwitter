@@ -12,3 +12,4 @@ C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\
 C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.dll
 C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\ref\LayoutTwitter.dll
 C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\LayoutTwitter.pdb
+C:\Users\Yoyo\source\repos\LayoutTwitter\LayoutTwitter\obj\Debug\netstandard2.0\ListeTweet.xaml.g.cs

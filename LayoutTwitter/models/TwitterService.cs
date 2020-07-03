@@ -1,6 +1,7 @@
 ﻿using LayoutTwitter.services;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace LayoutTwitter.models
@@ -10,6 +11,7 @@ namespace LayoutTwitter.models
 
         string identifiant = null;
         string password = null;
+
         List<Tweet> tweets = new List<Tweet>
         {
             new Tweet
@@ -29,7 +31,7 @@ namespace LayoutTwitter.models
                 DateCreation="18/06/2020",
                 Texte="Coucou les amis ! Bonnes vancances",
                 Nom="Yoanne",
-                Identifiant="password",                                                                                                                                                                                                                                                             t="password",
+                Identifiant="passwo",                                                                                                                                                                                                                                                             t="password",
                 Pseudo="Yoyo"
 
 
@@ -68,22 +70,11 @@ namespace LayoutTwitter.models
             }
         }
 
-        public List<Tweet> getTweets(string texte)
+        public List<Tweet> getTweets()
         {
-            List<Tweet> mesTweets = null;
+            
 
-            if (authenticate(identifiant, password))
-            {
-                foreach(Tweet t in tweets)
-                {
-                    if (t.Pseudo.Equals(identifiant))
-                    {
-                        mesTweets.Add(t);
-                    }
-                }
-                return (mesTweets);
-            }
-            return (mesTweets);
+            return (this.tweets);
         }
     }
 }

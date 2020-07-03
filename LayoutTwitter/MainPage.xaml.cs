@@ -56,17 +56,14 @@ namespace LayoutTwitter
                 }
                 else
                 {
-                    this.tweet.IsVisible = true;
+                    /* this.tweet.IsVisible = true;
 
-                    this.formulaire.IsVisible = false;
+                     this.formulaire.IsVisible = false;*/
+                    afficherListeTweet();
                 }
 
             }
-            else
-            {
-                this.formulaire.IsVisible = false;
-
-            }
+            
 
             /* bool acces = true;
              this.cacherErreur();
@@ -89,6 +86,11 @@ namespace LayoutTwitter
 
              }*/
 
+        }
+
+        private async void afficherListeTweet()
+        {
+           await Navigation.PushAsync(new ListeTweet());
         }
 
         private void afficherErreur(string message)
